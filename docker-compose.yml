@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  database:
+    image: mysql
+    container_name: test_db
+    environment:
+      MYSQL_DATABASE: dockertest
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - 3366:3306
+  app:
+    build: .
+    ports:
+      - 8080:8080
+    depends_on:
+      - database
