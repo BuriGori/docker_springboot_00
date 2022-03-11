@@ -20,3 +20,6 @@
 6. docker stop container_id
     - docker stop할건데
     - container_id로 알려줄게!(not 컨테이너이름)
+
+-------
+## Docker Compose 
