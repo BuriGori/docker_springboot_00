@@ -22,4 +22,4 @@
     - container_id로 알려줄게!(not 컨테이너이름)
 
 -------
-## Docker Compose 
+## Docker Compose 사용
